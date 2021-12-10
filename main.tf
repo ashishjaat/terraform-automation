@@ -117,7 +117,7 @@ resource "aws_instance" "webserver" {
                 sudo apt update -y
                 sudo apt install apache2 -y
                 sudo systemctl start apache2
-                sudo bash -c 'echo my very first web server > /var/www//html/index.html'
+                sudo bash -c 'echo my web server running here > /var/www//html/index.html'
                 EOF
 
   tags = {
